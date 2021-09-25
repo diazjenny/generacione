@@ -1,0 +1,126 @@
+/*Generales*/
+
+html {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  width: 100%;
+  max-width: 1600px;
+  padding: 0;
+}
+/*navbar*/
+header {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.625em 2.5em;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 2;
+}
+.navbar-nav a {
+  font-weight: bold;
+  font-size: 0.9375em;
+  text-align: center;
+  color: #1a519e !important;
+  background-color: #ffffff;
+  margin: 0 1.5625em 0 0;
+}
+.nav-link {
+  display: block;
+}
+
+/*Footer*/
+
+#footer {
+  padding: 0;
+}
+
+#footer .footer-bottom img {
+  margin: 2em 1em 0 0;
+  width: 70%;
+}
+
+#footer .footer-bottom {
+  font-size: 0.75em;
+}
+#footer .footer-bottom p {
+  margin: 0;
+}
+.ajuste-bottom-footer {
+  padding-top: 1em;
+}
+#footer .footer-top {
+  padding: 3em 0;
+  background-color: #0f4cb0;
+}
+
+#footer .footer-top a {
+  text-decoration: none;
+  color: #ffffff;
+  text-align: left;
+  font-size: 0.875em;
+  line-height: 0.875em;
+  font-weight: bold;
+}
+
+#footer .footer-top span {
+  color: #ffffff;
+  font-size: 1em;
+  line-height: 1em;
+  font-weight: bold;
+}
+
+#footer .footer-top .sub-block-social .social,
+#footer .footer-top .sub-block-menu .items {
+  list-style: none;
+  width: max-content;
+}
+
+#footer .footer-top .sub-block-social .social {
+  margin: 0;
+}
+
+#footer .footer-top .sub-block-menu {
+  border-left: 0.0625em solid #fff;
+  border-right: 0.0625em solid #fff;
+}
+
+/*Programa*/
+.programa {
+  background-color: #dfedfd;
+  padding: 9em 10em 0 10em;
+}
+
+.titulos {
+  color: #1a519e;
+  font-weight: bold;
+  font-size: 5.25em;
+  margin: 0;
+}
+.desc-portada-strong {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #707070;
+  letter-spacing: -0.045em;
+  margin-top: 0;
+  margin-bottom: 2.5em;
+  width: 26.5625em;
+  height: 14.125em;
+}
+.desc-portada {
+  font-size: 1.25em;
+  color: #707070;
+  margin-bottom: 3.125em;
+  width: 30.25em;
+  height: 6.0625em;
+}
+.imgs-portadas {
+  width: max-content;
+  margin-top: 1.25em;
+}
