@@ -12,21 +12,63 @@ body {
   max-width: 1600px;
   padding: 0;
 }
-.titulos {
+
+.intro-claro {
+  background-color: #dfedfd;
+  padding: 9em 10em 0 10em;
+}
+.intro-oscuro {
+  background-color: #1a519e;
+  padding: 9em 10em 0 10em;
+}
+
+.seccion-tipo3 {
+  padding: 2em 10em 4em 10em;
+  color: #707070;
+}
+.seccion-tipo3 p,
+li {
+  font-size: 1.125em;
+  line-height: 1.25em;
+}
+
+.seccion-tipo4 {
+  background-color: #fec700;
+  padding: 3em 10em;
   color: #1a519e;
+}
+.seccion-tipo4 p {
+  font-size: 1.25em;
+  line-height: 1.25em;
+  margin-bottom: 0;
+}
+
+.titulos {
   font-weight: bold;
   font-size: 5.25em;
   margin: 0;
+}
+.desc-portada-strong {
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: -0.045em;
+  margin-top: 0 !important;
+  margin-bottom: 3.5em;
+}
+.desc-portada {
+  font-size: 1.3em;
 }
 .enlaces {
   color: #1a519e;
   text-decoration: none;
 }
+.ajuste-descripcion {
+  padding-right: 5em;
+}
+
 /*navbar*/
 header {
-  display: flex;
-  justify-content: space-around;
-  padding: 0.625em 2.5em;
+  padding: 0 3em 0 2em;
   width: 100%;
   box-sizing: border-box;
   margin: 0 auto;
@@ -102,28 +144,19 @@ header {
 }
 
 /*Programa*/
-.intro {
-  background-color: #dfedfd;
-  padding: 9em 10em 0 10em;
+#programa .titulos {
+  color: #1a519e;
 }
 .intro p {
   line-height: 1.3em;
 }
-.ajuste-programa-desc {
-  padding-right: 5em;
-}
-.desc-portada-strong {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #707070;
-  letter-spacing: -0.045em;
-  margin-top: 0 !important;
-  margin-bottom: 3.5em;
-}
-.desc-portada {
-  font-size: 1.3em;
+#programa .desc-portada-strong {
   color: #707070;
 }
+#programa .desc-portada {
+  color: #707070;
+}
+
 .imgs-portadas {
   width: max-content;
   margin-top: 1.25em;
@@ -139,17 +172,17 @@ header {
   margin-bottom: 0;
 }
 .ajuste-col-componente {
-  padding-right: 70px;
+  padding-right: 4.375em;
   padding-left: 0;
 }
 .lineas {
-  width: 86px;
-  height: 25px;
+  width: 5.375em;
+  height: 1.5625em;
 }
 .titulos-componentes {
-  font-size: 20px;
+  font-size: 1.25em;
   font-weight: bold;
-  letter-spacing: 4px;
+  letter-spacing: 0.25em;
 }
 .titulo-equidad {
   color: #dfedfd;
@@ -160,20 +193,66 @@ header {
 .titulo-excelencia {
   color: #f39d0a;
 }
-.ejes {
-  padding: 2em 10em 4em 10em;
-  color: #707070;
-}
-.ejes p,
-li {
-  font-size: 1.125em;
-  line-height: 1.25em;
-}
+
 .enlaces-componentes a {
   color: #1a519e;
   font-size: 1.2em;
   text-decoration: none;
   background-color: #dfedfd;
   padding: 0.4em 1em;
-  margin: 0 1em;
+  margin: 0.5em 1em;
+}
+/*Equidad*/
+#equidad .bgd {
+  background-color: #1a519e;
+}
+#equidad .titulos {
+  color: #dfedfd;
+}
+#equidad .desc-portada-strong {
+  color: #fec700;
+  margin-bottom: 0;
+}
+#equidad .desc-portada {
+  color: #ffffff;
+}
+#soy h2 {
+  font-size: 1.25em;
+  font-weight: bold;
+  margin-left: 0.5em;
+}
+#botones-equidad {
+  padding: 5em 10em;
+}
+.botones-oscuros {
+  list-style: none;
+  text-align: center;
+  position: relative;
+}
+.botones-oscuros::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.125em;
+  background: #1a519e;
+  right: calc(30%);
+  top: calc(50% - 0.0625em);
+  z-index: 1;
+}
+.botones-oscuros a {
+  background: #1a519e;
+  color: white;
+  border-radius: 2.5em;
+  display: inline-block;
+  max-width: 9.6875em;
+  margin: 1.25em;
+  font-size: 1.1875em;
+  font-weight: 500;
+  letter-spacing: 0.03125em;
+  padding: 0.3125em 1.5625em;
+  border: solid 0.0625em #1a519e;
+  text-decoration: none;
+}
+.botones-oscuros a:hover {
+  color: #f5d65c;
 }
