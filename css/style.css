@@ -12,6 +12,16 @@ body {
   max-width: 1600px;
   padding: 0;
 }
+.titulos {
+  color: #1a519e;
+  font-weight: bold;
+  font-size: 5.25em;
+  margin: 0;
+}
+.enlaces {
+  color: #1a519e;
+  text-decoration: none;
+}
 /*navbar*/
 header {
   display: flex;
@@ -92,35 +102,78 @@ header {
 }
 
 /*Programa*/
-.programa {
+.intro {
   background-color: #dfedfd;
   padding: 9em 10em 0 10em;
 }
-
-.titulos {
-  color: #1a519e;
-  font-weight: bold;
-  font-size: 5.25em;
-  margin: 0;
+.intro p {
+  line-height: 1.3em;
+}
+.ajuste-programa-desc {
+  padding-right: 5em;
 }
 .desc-portada-strong {
   font-size: 1.5em;
   font-weight: bold;
   color: #707070;
   letter-spacing: -0.045em;
-  margin-top: 0;
-  margin-bottom: 2.5em;
-  width: 26.5625em;
-  height: 14.125em;
+  margin-top: 0 !important;
+  margin-bottom: 3.5em;
 }
 .desc-portada {
-  font-size: 1.25em;
+  font-size: 1.3em;
   color: #707070;
-  margin-bottom: 3.125em;
-  width: 30.25em;
-  height: 6.0625em;
 }
 .imgs-portadas {
   width: max-content;
   margin-top: 1.25em;
+}
+.componentes {
+  background-color: #1a519e;
+  padding: 3em 8em 4em 10em;
+  color: #ffffff;
+}
+.componentes p {
+  font-size: 1.25em;
+  line-height: 1.25em;
+  margin-bottom: 0;
+}
+.ajuste-col-componente {
+  padding-right: 70px;
+  padding-left: 0;
+}
+.lineas {
+  width: 86px;
+  height: 25px;
+}
+.titulos-componentes {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+.titulo-equidad {
+  color: #dfedfd;
+}
+.titulo-equipo {
+  color: #ee85ca;
+}
+.titulo-excelencia {
+  color: #f39d0a;
+}
+.ejes {
+  padding: 2em 10em 4em 10em;
+  color: #707070;
+}
+.ejes p,
+li {
+  font-size: 1.125em;
+  line-height: 1.25em;
+}
+.enlaces-componentes a {
+  color: #1a519e;
+  font-size: 1.2em;
+  text-decoration: none;
+  background-color: #dfedfd;
+  padding: 0.4em 1em;
+  margin: 0 1em;
 }
