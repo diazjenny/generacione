@@ -322,3 +322,34 @@ table.table-bordered > tbody > tr > td {
 #identificado h2 {
   font-size: 1.5em;
 }
+
+/*Equipo*/
+
+#equipo {
+  color: #1a519e;
+  background: url("../assets/images/equipo-birrete.svg") no-repeat left
+    calc(90% - 0px);
+  background-color: #dfedfd;
+}
+#equipo p {
+  font-size: 1.25em;
+  line-height: 1.5em;
+}
+.ajuste-img {
+  padding-right: 1em;
+}
+.img-libros {
+  max-width: 23.75em;
+}
+.img-presupuesto {
+  max-width: 28.125em;
+  margin: 1.875em auto 0;
+  display: block;
+}
+#recursos {
+  padding-top: 4em;
+}
+#recursos ul {
+  list-style: none;
+  padding-left: 0;
+}
