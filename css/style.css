@@ -12,6 +12,9 @@ body {
   max-width: 1600px;
   padding: 0;
 }
+.logo {
+  width: 50%;
+}
 
 .intro-claro {
   background-color: #dfedfd;
@@ -71,7 +74,7 @@ li {
 }
 
 /*navbar*/
-#menu {
+header {
   padding: 0 3em 0 2em;
   width: 100%;
   box-sizing: border-box;
@@ -86,9 +89,6 @@ li {
   color: #1a519e !important;
   background-color: #ffffff;
   margin: 0 1.5625em 0 0;
-}
-.nav-link {
-  display: block;
 }
 
 /*Footer*/
@@ -419,7 +419,7 @@ table.table-bordered > tbody > tr > td {
   font-size: 1.25em;
   line-height: 1.5em;
 }
-.nav-item {
+#mentoria .nav-item {
   border-bottom: 0px solid #dee2e6;
   background: #4690ed;
   width: 25%;
@@ -428,7 +428,7 @@ table.table-bordered > tbody > tr > td {
   text-align: center;
 }
 
-.nav-tabs .nav-item.show .nav-link,
+#mentoria .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
   color: white;
   background-color: rgba(0, 0, 0, 0.2);
@@ -436,7 +436,7 @@ table.table-bordered > tbody > tr > td {
   border: none;
   border-radius: 0;
 }
-.nav-tabs .nav-link,
+#mentoria .nav-tabs .nav-link,
 .nav-tabs .nav-link:hover {
   border: 0px solid transparent;
   border-top-left-radius: 0rem;
@@ -445,7 +445,7 @@ table.table-bordered > tbody > tr > td {
   text-transform: uppercase;
   padding: 15px 20px;
 }
-.tab-content {
+#mentoria .tab-content {
   background: #dfedfd;
   padding: 35px 35px;
 }
@@ -456,4 +456,114 @@ table.table-bordered > tbody > tr > td {
 #mentor ul {
   list-style: none;
   padding-left: 0;
+}
+
+/*---Media Queries---*/
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #carousel {
+    display: none;
+  }
+  #footer-index {
+    display: none;
+  }
+  #botones {
+    display: none !important;
+  }
+  #menu {
+    background-color: #1a519e;
+    height: 100%;
+  }
+  header {
+    padding: 0;
+    margin: 1em 5em;
+  }
+  nav .container-fluid {
+    max-height: 5em;
+  }
+  .logo {
+    width: 45%;
+    min-width: 128px;
+  }
+  #programa {
+    box-sizing: content-box;
+    width: 100%;
+  }
+  .intro-claro,
+  .intro-oscuro,
+  .componentes {
+    padding: 6em 4em 1em 5em;
+  }
+  .seccion-tipo2,
+  .seccion-tipo3,
+  .seccion-tipo4 {
+    padding: 4em 4em 1em 5em;
+  }
+
+  .seccion-tipo3 p,
+  li {
+    font-size: 1.125em;
+    line-height: 1.25em;
+  }
+  .seccion-tipo4 p {
+    font-size: 1.25em;
+    line-height: 1.25em;
+    margin-bottom: 0;
+  }
+  .titulos {
+    font-weight: bold;
+    font-size: 2.9375em;
+    margin: 0;
+  }
+  .desc-portada-strong {
+    font-size: 1.2em;
+    margin: 2em 0;
+  }
+  .desc-portada {
+    font-size: 1em;
+  }
+  .ajuste-descripcion {
+    padding-right: 0;
+    margin-bottom: 3em;
+  }
+  .imgs-portadas {
+    width: 100%;
+    margin-top: 0;
+  }
+  .componentes p {
+    font-size: 1em;
+    line-height: 1.25em;
+    margin-bottom: 1em;
+  }
+  .ajuste-col-componente {
+    padding: 0 2em;
+  }
+  .ajuste-bottom-footer {
+    padding-left: 5em;
+  }
+  .botones-oscuros::before {
+    content: none;
+  }
+  #aclaracion {
+    padding-right: 4em;
+  }
+  .botones-oscuros a {
+    font-size: 0.95em;
+  }
+  p {
+    font-size: 1em;
+  }
+  #equipo {
+    color: #1a519e;
+    background: url("../assets/images/equipo-birrete.svg") no-repeat left
+      calc(90% - 5px);
+    background-color: #dfedfd;
+  }
 }
