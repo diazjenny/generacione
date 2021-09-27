@@ -3,6 +3,9 @@
 html {
   display: flex;
   justify-content: center;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 body {
@@ -15,7 +18,6 @@ body {
 .logo {
   width: 50%;
 }
-
 .intro-claro {
   background-color: #dfedfd;
   padding: 9em 10em 0 10em;
@@ -121,7 +123,7 @@ header {
   color: #ffffff;
   text-align: left;
   font-size: 0.875em;
-  line-height: 0.875em;
+  line-height: 2em;
   font-weight: bold;
 }
 
@@ -361,6 +363,19 @@ table.table-bordered > tbody > tr > td {
   color: #1a519e;
   text-decoration: none;
 }
+#acordeon img {
+  display: block;
+  margin: auto;
+}
+.logos-conectate-s {
+  width: 12.5em;
+}
+.logos-conectate-m {
+  width: 15.625em;
+}
+.logos-conectate-l {
+  width: 31.25em;
+}
 .panel-group .panel {
   border-radius: 0;
   box-shadow: none;
@@ -459,32 +474,61 @@ table.table-bordered > tbody > tr > td {
 }
 
 /*---Media Queries---*/
+/* X-Large devices)*/
+@media screen and (min-width: 1200px) {
+  .menu-querie {
+    display: none;
+  }
+  .img-equipo-movil {
+    display: none;
+  }
+}
+/*Large devices*/
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .menu-querie {
+    display: none;
+  }
+  .img-equipo-movil {
+    display: none;
+  }
+}
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+/* Medium devices */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  .menu-querie {
+    display: none;
+  }
+  .img-equipo-movil {
+    display: none;
+  }
 }
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+/* Small devices */
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+  .menu-querie {
+    display: none;
+  }
+  .img-equipo-movil {
+    display: none;
+  }
 }
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+/* X-Small devices */
+@media screen and (max-width: 575.98px) {
   #carousel {
     display: none;
   }
-  #footer-index {
+  .footer-index {
     display: none;
   }
   #botones {
     display: none !important;
   }
-  #menu {
-    background-color: #1a519e;
-    height: 100%;
-  }
   header {
     padding: 0;
-    margin: 1em 5em;
   }
+  .body-programa {
+    background-color: #1a519e;
+  }
+
   nav .container-fluid {
     max-height: 5em;
   }
@@ -492,46 +536,43 @@ table.table-bordered > tbody > tr > td {
     width: 45%;
     min-width: 128px;
   }
-  #programa {
-    box-sizing: content-box;
-    width: 100%;
+
+  .menu-home {
+    display: none !important;
   }
+  .menu-querie {
+    margin-top: 50%;
+  }
+  .menu-querie .navbar-nav a {
+    font-size: 0.875em;
+    margin: 0.7em 0;
+    padding: 0.5em 3em;
+  }
+
   .intro-claro,
   .intro-oscuro,
   .componentes {
-    padding: 6em 4em 1em 5em;
+    padding: 6em 2em 2em 2em;
   }
   .seccion-tipo2,
   .seccion-tipo3,
   .seccion-tipo4 {
-    padding: 4em 4em 1em 5em;
-  }
-
-  .seccion-tipo3 p,
-  li {
-    font-size: 1.125em;
-    line-height: 1.25em;
-  }
-  .seccion-tipo4 p {
-    font-size: 1.25em;
-    line-height: 1.25em;
-    margin-bottom: 0;
-  }
-  .titulos {
-    font-weight: bold;
-    font-size: 2.9375em;
-    margin: 0;
-  }
-  .desc-portada-strong {
-    font-size: 1.2em;
-    margin: 2em 0;
-  }
-  .desc-portada {
-    font-size: 1em;
+    padding: 4em 2em 2em 2em;
   }
   .ajuste-descripcion {
     padding-right: 0;
     margin-bottom: 3em;
+  }
+  .titulos {
+    font-size: 4em;
+  }
+  .desc-portada-strong {
+    font-size: 1.2em;
+    margin: 2em 0 1em 0;
+  }
+  .desc-portada {
+    font-size: 1em;
+    margin-top: 1em;
   }
   .imgs-portadas {
     width: 100%;
@@ -543,27 +584,54 @@ table.table-bordered > tbody > tr > td {
     margin-bottom: 1em;
   }
   .ajuste-col-componente {
-    padding: 0 2em;
+    padding: 0 4em;
   }
-  .ajuste-bottom-footer {
-    padding-left: 5em;
+  #botones-equidad {
+    padding: 4em 2em 2em 2em;
+  }
+  #botones-equidad .botones-oscuros a {
+    margin: 1em;
   }
   .botones-oscuros::before {
     content: none;
   }
+  .ajuste-bottom-footer {
+    padding-left: 5em;
+  }
   #aclaracion {
     padding-right: 4em;
   }
-  .botones-oscuros a {
-    font-size: 0.95em;
+  .ajuste-img-movil {
+    display: none !important;
   }
-  p {
-    font-size: 1em;
+  .img-equipo-movil {
+    background-color: #dfedfd;
   }
   #equipo {
     color: #1a519e;
-    background: url("../assets/images/equipo-birrete.svg") no-repeat left
-      calc(90% - 5px);
+    background: none;
     background-color: #dfedfd;
+  }
+  .logos-conectate-s {
+    width: 9em;
+  }
+  .logos-conectate-m {
+    width: 10em;
+  }
+  .logos-conectate-l {
+    width: 15em;
+  }
+  #mentoria .nav-item a {
+    font-size: 0.6em;
+    line-height: 1.3em;
+  }
+  #mentoria .ingreso {
+    font-size: 0.85em;
+  }
+  #inspiracion p {
+    font-size: 1.125em;
+  }
+  #mentoria p {
+    font-size: 1.125em;
   }
 }
