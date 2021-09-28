@@ -124,11 +124,12 @@ li {
   margin-left: 1em;
 }
 .header .nav-link {
-  font-size: 0.875em;
+  font-size: 0.8em;
   font-weight: bold;
   color: #1a519e;
   background-color: #fff;
   align-items: center;
+  justify-content: center;
 }
 .header .nav-link:hover {
   color: #f39d0a;
@@ -686,9 +687,10 @@ table.table-bordered > tbody > tr > td {
   }
   .borde-salario {
     border-right: none;
-    height: auto;
-    padding-top: 0.5em;
-    font-size: 1.125em !important;
+    color: #1a519e;
+    font-size: 1.375em !important;
+    height: 1em;
+    padding-right: 0.7em;
   }
   .p-salario {
     padding: 0.5em 0 0 0;
@@ -759,7 +761,7 @@ table.table-bordered > tbody > tr > td {
     flex-direction: column;
     background-color: #1a519e;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 5px;
     text-align: center;
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
@@ -769,6 +771,9 @@ table.table-bordered > tbody > tr > td {
   }
   .header .nav-link {
     padding-top: 0.5em;
+  }
+  .header .nav-menu.active a {
+    width: 7.75em;
   }
   .header .nav-item {
     margin: 1em 0;
@@ -836,6 +841,9 @@ table.table-bordered > tbody > tr > td {
     margin: 0.7em 0;
     padding: 0.5em 3em;
   }
+  .menu-querie .nav-link a {
+    text-decoration: none;
+  }
 
   .intro-claro,
   .intro-oscuro,
@@ -865,11 +873,11 @@ table.table-bordered > tbody > tr > td {
     font-size: 2.9375em;
   }
   .desc-portada-strong {
-    font-size: 1em;
+    font-size: 1em !important;
     margin: 2em 0 1em 0;
   }
   .desc-portada {
-    font-size: 0.75em;
+    font-size: 0.75em !important;
     margin-top: 1em;
   }
   .imgs-portadas {
@@ -887,8 +895,13 @@ table.table-bordered > tbody > tr > td {
   #botones-equidad {
     padding: 4em 2em 2em 2em;
   }
+
   #botones-equidad .botones-oscuros a {
+    font-size: 0.8125em;
     margin: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    line-height: 0.8125em;
   }
   .botones-oscuros::before {
     content: none;
@@ -898,6 +911,36 @@ table.table-bordered > tbody > tr > td {
   }
   #aclaracion {
     padding-right: 4em;
+  }
+  #cronograma .seccion-tipo2 p {
+    font-size: 0.6875em !;
+  }
+  #cierre p {
+    font-size: 0.75em;
+  }
+  .borde-salario {
+    border-right: none;
+    color: #1a519e;
+    font-size: 1.375em !important;
+    height: 1em;
+    padding-right: 0.7em;
+  }
+  #identificado h3,
+  h2,
+  p {
+    font-size: 0.875em !important;
+  }
+  #benficiario h3,
+  h2,
+  p {
+    font-size: 0.875em !important;
+  }
+  #botones-excelencia .botones-oscuros a {
+    font-size: 0.75em;
+    margin: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    line-height: 0.75em;
   }
   .ajuste-img-movil {
     display: none !important;
