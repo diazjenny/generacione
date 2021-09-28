@@ -20,33 +20,41 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light collapse.navbar-collapse">
-            <div class="container-fluid d-flex flex-row flex-nowrap">
-                <a class="navbar-brand " href="index.html"><img class="logo" src="assets/images/logo_generacione.png"
-                        alt="logo generacion e"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-md-end " id="navbarNavAltMarkup">
-                    <ul class=" navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html"><i
-                                    class="fas fa-home"></i></a></li>
-                        <li class="nav-item"><a class="nav-link" href="programa.html">Programa</a></li>
-                        <li class="nav-item"><a class="nav-link" href="equidad.html">Equidad</a></li>
-                        <li class="nav-item"><a class="nav-link" href="excelencia.html">Excelencia</a></li>
-                        <li class="nav-item"><a class="nav-link" href="equipo.html">Equipo</a></li>
-                        <li class="nav-item"><a class="nav-link" href="conectate.html">Conéctate</a></li>
-                    </ul>
-                </div>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo"><img class="logo" src="assets/images/logo_generacione.png"
+                    alt="logo generacion e"></a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html"><i class="fas fa-home"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="programa.html" class="nav-link">Programa</a>
+                </li>
+                <li class="nav-item">
+                    <a href="equidad.html" class="nav-link">Equidad</a>
+                </li>
+                <li class="nav-item">
+                    <a href="excelencia.html" class="nav-link">Excelencia</a>
+                </li>
+                <li class="nav-item">
+                    <a href="equipo.html" class="nav-link">Equipo</a>
+                </li>
+                <li class="nav-item">
+                    <a href="conectate.html" class="nav-link">Conéctate</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </nav>
     </header>
 
     <section id="excelencia" class="seccion-tipo4">
         <div class="container-fluid d-flex">
-            <div class="row g-0 pb-5 ">
+            <div class="row g-0 pb-lg-5 pb-md-0 ">
                 <div class="col-12 col-md-7">
                     <div class="ajuste-descripcion">
                         <h1 class="titulos">EXCELENCIA</h1>
@@ -219,15 +227,15 @@
             </div>            
         </div>
         <div class="container-fluid d-flex ">
-            <div class="row g-0 ">
-                <div class="col-12 col-md-4 d-flex flex-row ">
+            <div class="row g-0 h-100 d-flex flex-md-column">
+                <div class="col-12 col-lg-4 col-md-12 d-flex flex-row flex-md-column flex-sm-column">
                     <p class="borde-salario"><strong>1SMMLV</strong></p>
                     <p class="p-salario"> Cuando la Institución de
                         Educación Superior elegida se
                         encuentra en la misma ciudad en
                         donde cursó su bachillerato.</p>
                 </div>
-                <div class="col-12 col-md-4 d-flex flex-row">
+                <div class="col-12 col-lg-4 col-md-12 d-flex flex-md-column flex-sm-column">
                     <p class="borde-salario"><strong>2SMMLV</strong></p>
                     <p class="p-salario">Cuando la Institución de
                         Educación Superior elegida
@@ -241,7 +249,7 @@
                         académica de pregrado
                         acreditada.</p>
                 </div>
-                <div class="col-12 col-md-4 d-flex flex-row">
+                <div class="col-12 col-lg-4 col-md-12 d-flex flex-row flex-md-column flex-sm-column">
                     <p class="borde-salario"><strong>3SMMLV</strong></p>
                     <p class="p-salario">Cuando la Institución de
                         Educación Superior elegida
@@ -265,15 +273,15 @@
                     <h3 class="mb-md-4"><strong>Al ser identificado como potencial beneficiario - candidato a la convocatoria, debo:</strong></h3>
                 </div>
             </div>
-            <div class="row g-0">
-                <div class="col-12 col-md-4 ajuste-col-componente mt-4 mt-md-0">
+            <div class="row g-0 h-100 d-flex flex-md-column flex-sm-column">
+                <div class="col-12 col-lg-4 col-md-12 ajuste-col-componente mt-4 mt-md-0">
                     <div class="d-flex flex-row align-items-center">
                         <img src="assets/images/rayas azules claro.JPG" alt="Lineas" class="lineas img-fluid" />
                         <h2><strong>1</strong></h2>
                     </div>
                     <p><br>Conocer y acogerme a todas las disposiciones incluidas en el Reglamento Operativo con respecto a la convocatoria</p>
                 </div>
-                <div class="col-12 col-md-4 ajuste-col-componente">
+                <div class="col-12 col-lg-4 col-md-12 ajuste-col-componente">
                     <div class="d-flex flex-row align-items-center">
                         <img src="assets/images/rayas azules claro.JPG" alt="Lineas" class="lineas img-fluid" />
                         <h2><strong>2</strong></h2>
@@ -281,7 +289,7 @@
                     <p><br>Realizar los procesos de la convocatoria dentro de los tiempos del cronograma y de acuerdo con las condiciones
                     establecidas.</p>
                 </div>
-                <div class="col-12 col-md-4 ajuste-col-componente">
+                <div class="col-12 col-lg-4 col-md-12 ajuste-col-componente">
                     <div class="d-flex flex-row align-items-center">
                         <img src="assets/images/rayas azules claro.JPG" alt="Lineas" class="lineas img-fluid" />
                         <h2><strong>3</strong></h2>
@@ -293,29 +301,29 @@
         </div>
     </section>
 
-    <section class="seccion-tipo4">
+    <section id="benficiario" class="seccion-tipo4">
         <div class="container-fluid">
             <div class="row g-0">
                 <div class="col-12">
                     <h3 class="mb-md-4"><strong>Al ser beneficiario del componente de excelencia, debo:</strong></h3>
                 </div>
             </div>
-            <div class="row g-0">
-                <div class="col-12 col-md-4 ajuste-col-componente mt-4 mt-md-0">
+            <div class="row g-0 d-flex flex-md-column flex-sm-column">
+                <div class="col-12 col-lg-4 col-md-12 ajuste-col-componente mt-4 mt-md-0">
                     <div class="d-flex flex-row align-items-center">
                         <img src="assets/images/rayas azules.JPG" alt="Lineas" class="lineas img-fluid" />
                         <h2><strong>1</strong></h2>
                     </div>
-                    <p><br>Conocer y cumplir todas las disposiciones incluidas en el Reglamento Operativo aplicable.</p>
+                    <p class="pb-md-3 pb-sm-3" ><br>Conocer y cumplir todas las disposiciones incluidas en el Reglamento Operativo aplicable.</p>
                 </div>
-                <div class="col-12 col-md-4 ajuste-col-componente mt-4 mt-md-0">
+                <div class="col-12 col-lg-4 col-md-124 ajuste-col-componente mt-4 mt-md-0">
                     <div class="d-flex flex-row align-items-center">
                         <img src="assets/images/rayas azules.JPG" alt="Lineas" class="lineas img-fluid" />
                         <h2><strong>2</strong></h2>
                     </div>
                     <p><br>Mantener el promedio académico exigido por la Institución de Educación Superior (IES).</p>
                 </div>
-                <div class="col-12 col-md-4 ajuste-col-componente d-flex flex-row align-items-center">
+                <div class="col-12 col-lg-4 col-md-12 ajuste-col-componente d-flex flex-row align-items-center">
                     
                     <p><br>En caso de que requieras información adicional los canales oficiales del Ministerio de Educación Nacional, del ICETEX y
                     el correo electrónico <a class="enlaces" href="mailto:excelencia@icetex.gov.co"><b>excelencia@icetex.gov.co</b></a> se encuentran
@@ -325,14 +333,14 @@
         </div>
     </section>
 
-    <section class="seccion-tipo3">
+    <section id="botones-excelencia" class="seccion-tipo3">
         <div class="container-fluid">
             <p><small>* La definición del número de cupos a ofertar se encuentra dentro de las facultades de la Junta Administradora
                     del componente de Excelencia.</small></p>
             <p><small>** Para ello el joven debe encontrarse con todos sus datos actualizados en la base certificada por el
                     Departamento Nacional de Planeación con corte al 30 de octubre de 2020.</small></p>
         </div>
-        <div class="container-fluid d-flex flex-wrap justify-content-center align-items-center  botones-oscuros ">         
+        <div class="container-fluid d-flex flex-wrap justify-content-lg-cente justify-content-md-between align-items-center  botones-oscuros ">         
             <a href="http://colombiaaprende.edu.co/sites/default/files/files_public/2021-01/2020-11-2020-archivo-oferta-academica-icetex.xlsx"
                 target="_blank">Conoce las instituciones</a>
             <a href="https://www.icetex.gov.co/portalacces/GestionCredito/IFS/ConsultarExcelencia.aspx#no-back-button"
@@ -380,8 +388,9 @@
                 </ul>
             </div>
         </div>
-        <div class="row g-0 footer-bottom col-12 col-md-8 offset-md-2">
-            <div class="col-12 col-md-6 d-flex align-items-center justify-content-center justify-content-md-end ">
+        <div class="row g-0 footer-bottom col-12 col-md-8 offset-lg-2 offset-md-1">
+            <div
+                class="col-12 col-md-6 d-flex align-items-center justify-content-center justify-content-lg-end justify-content-md-end ">
                 <img src="assets/images/logo-ministerio-educacion.png" alt="logo mineducación" class="img-fluid">
             </div>
             <div class="col-12 col-md-6 ajuste-bottom-footer">
@@ -409,7 +418,17 @@
 
         gtag('config', 'UA-149617899-1');
     </script>
-    
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+    </script>
     <script src="https://kit.fontawesome.com/9c2fd204f6.js" crossorigin="anonymous"></script>
     
     

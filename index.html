@@ -20,26 +20,34 @@
 </head>
 
 <body class="body-programa">
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light collapse.navbar-collapse">
-            <div class="container-fluid d-flex flex-row flex-nowrap">
-                <a class="navbar-brand " href="index.html"><img class="logo" src="assets/images/logo_generacione.png"
-                        alt="logo generacion e"></a>
-                <button class="menu-home navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="menu-home collapse navbar-collapse justify-content-md-end " id="navbarNavAltMarkup">
-                    <ul class=" navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html"><i
-                                    class="fas fa-home"></i></a></li>
-                        <li class="nav-item"><a class="nav-link" href="programa.html">Programa</a></li>
-                        <li class="nav-item"><a class="nav-link" href="equidad.html">Equidad</a></li>
-                        <li class="nav-item"><a class="nav-link" href="excelencia.html">Excelencia</a></li>
-                        <li class="nav-item"><a class="nav-link" href="equipo.html">Equipo</a></li>
-                        <li class="nav-item"><a class="nav-link" href="conectate.html">Conéctate</a></li>
-                    </ul>
-                </div>
+    <header class="header nav-contraste">
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo"><img class="logo" src="assets/images/logo_generacione.png"
+                    alt="logo generacion e"></a>
+            <ul class="nav-menu menu-home">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html"><i class="fas fa-home"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="programa.html" class="nav-link">Programa</a>
+                </li>
+                <li class="nav-item">
+                    <a href="equidad.html" class="nav-link">Equidad</a>
+                </li>
+                <li class="nav-item">
+                    <a href="excelencia.html" class="nav-link">Excelencia</a>
+                </li>
+                <li class="nav-item">
+                    <a href="equipo.html" class="nav-link">Equipo</a>
+                </li>
+                <li class="nav-item">
+                    <a href="conectate.html" class="nav-link">Conéctate</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </nav>
     </header>
@@ -121,8 +129,9 @@
                 </ul>
             </div>
         </div>
-        <div class="row g-0 footer-bottom col-12 col-md-8 offset-md-2">
-            <div class="col-12 col-md-6 d-flex align-items-center justify-content-center justify-content-md-end ">
+        <div class="row g-0 footer-bottom col-12 col-md-8 offset-lg-2 offset-md-1">
+            <div
+                class="col-12 col-md-6 d-flex align-items-center justify-content-center justify-content-lg-end justify-content-md-end ">
                 <img src="assets/images/logo-ministerio-educacion.png" alt="logo mineducación" class="img-fluid">
             </div>
             <div class="col-12 col-md-6 ajuste-bottom-footer">
@@ -150,7 +159,17 @@
 
         gtag('config', 'UA-149617899-1');
     </script>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
 
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+    </script>
     <script src="https://kit.fontawesome.com/9c2fd204f6.js" crossorigin="anonymous"></script>
     
     

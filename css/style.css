@@ -1,5 +1,9 @@
 /*Generales*/
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 html {
   display: flex;
   justify-content: center;
@@ -16,7 +20,8 @@ body {
   padding: 0;
 }
 .logo {
-  width: 50%;
+  width: 90%;
+  max-width: 240px;
 }
 .intro-claro {
   background-color: #dfedfd;
@@ -76,27 +81,67 @@ li {
 }
 
 /*navbar*/
-header {
-  padding: 0 3em 0 2em;
+.header {
   width: 100%;
-  box-sizing: border-box;
-  margin: 0 auto;
   position: absolute;
   z-index: 2;
 }
-.navbar-nav a {
+.header li {
+  list-style: none;
+}
+.header a {
+  text-decoration: none;
+}
+.header .navbar {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+}
+.hamburger {
+  display: none;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #1a519e;
+}
+.nav-contraste .hamburger .bar {
+  background-color: #dfedfd;
+}
+.header .nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+}
+.header .nav-item {
+  margin-left: 1em;
+}
+.header .nav-link {
+  font-size: 0.875em;
   font-weight: bold;
-  font-size: 0.9375em;
-  text-align: center;
-  color: #1a519e !important;
-  background-color: #ffffff;
-  margin: 0 1.5625em 0 0;
+  color: #1a519e;
+  background-color: #fff;
+  align-items: center;
+}
+.header .nav-link:hover {
+  color: #f39d0a;
+}
+.header .nav-logo {
+  font-size: 2.1em;
 }
 
 /*Footer*/
 
 #footer {
   padding: 0;
+  min-width: 13em;
 }
 
 #footer .footer-bottom img {
@@ -268,7 +313,6 @@ header {
   color: #fff;
 }
 #excelencia .desc-portada-strong {
-  font-size: 1.5em;
   margin-bottom: 1em;
 }
 #excelencia .desc-portada {
@@ -276,7 +320,6 @@ header {
 }
 #aclaracion {
   padding-top: 4em;
-  padding-right: 17em;
 }
 #cronograma h3 {
   font-size: 1.5em;
@@ -493,31 +536,246 @@ table.table-bordered > tbody > tr > td {
   }
 }
 
-/* Medium devices */
+/* Medium devices tablet__________________________________________________*/
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
   .menu-querie {
     display: none;
   }
+  #footer .footer-top .sub-block-menu {
+    border-left: none;
+    border-right: none;
+  }
+  #footer .footer-top .sub-block-social {
+    flex-direction: column !important;
+  }
+  #footer .footer-top .sub-block-social span {
+    padding-bottom: 1em;
+  }
   .img-equipo-movil {
     display: none;
   }
+  .logo {
+    width: 200px;
+  }
+  .intro-claro,
+  .intro-oscuro {
+    padding: 10em 3em 0 3em;
+  }
+  .componentes {
+    padding: 3em 3em 2em 3em;
+  }
+  .seccion-tipo2,
+  .seccion-tipo4 {
+    padding: 2em 3em 2em 3em;
+  }
+  .seccion-tipo3 {
+    padding: 2em 3em 2em 3em;
+  }
+  .seccion-tipo3 p,
+  li {
+    font-size: 1em;
+    line-height: 1.125em;
+    margin-bottom: 0;
+  }
+  .seccion-tipo4 p {
+    font-size: 1em !important;
+    line-height: 1.25em;
+    margin-bottom: 0;
+  }
+  .ajuste-descripcion {
+    padding-right: 2em;
+    margin-bottom: 3em;
+  }
+  .titulos {
+    font-size: 2.9375em;
+    margin-bottom: 0.2em;
+  }
+  .desc-portada-strong {
+    font-size: 1em;
+    margin: 2em 0 1em 0;
+  }
+  .desc-portada {
+    font-size: 1em;
+    margin-top: 2em;
+  }
+  .imgs-portadas {
+    width: 100%;
+  }
+  .componentes p {
+    font-size: 1em;
+    line-height: 1.125em;
+  }
+  .ajuste-col-componente {
+    padding: 0;
+  }
+  #soy .ajuste-col-componente {
+    padding-right: 3em;
+  }
+  #botones a {
+    display: none;
+  }
+  #botones-equidad {
+    padding: 2em;
+  }
+  #botones-equidad .botones-oscuros a {
+    margin: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    line-height: 0.8125em;
+  }
+  .botones-oscuros::before {
+    content: none;
+  }
+  .ajuste-bottom-footer {
+    padding: 1em 0;
+  }
+  #excelencia {
+    padding-bottom: 0;
+  }
+  #aclaracion {
+    padding-top: 2em;
+  }
+  #identificado .ajuste-col-componente {
+    padding-left: 4em;
+  }
+  #identificado h3,
+  h2,
+  p {
+    font-size: 1.125em !important;
+  }
+  #benficiario .ajuste-col-componente {
+    padding-left: 4em;
+  }
+  #benficiario h3,
+  h2 {
+    font-size: 1.125em !important;
+  }
+  #beneficiario .seccion-tipo4 p {
+    font-size: 1.125em !important;
+  }
+  .borde-salario {
+    border-right: none;
+    height: auto;
+    padding-top: 0.5em;
+    font-size: 1.125em !important;
+  }
+  .p-salario {
+    padding: 0.5em 0 0 0;
+    width: 100%;
+    font-size: 1.125em !important;
+  }
+  #botones-excelencia .botones-oscuros a {
+    font-size: 0.6875em;
+    padding: 1em 2em 1em 2em;
+    line-height: 0.8125em;
+    max-width: 12em;
+  }
+  .ajuste-img-movil {
+    display: none !important;
+  }
+  .img-equipo-movil {
+    display: inherit;
+    background-color: #dfedfd;
+  }
+  #equipo {
+    background: none;
+    background-color: #dfedfd;
+    font-weight: bold;
+  }
+  #img-portada {
+    display: none;
+  }
+  #recursos p {
+    font-size: 1em !important;
+    line-height: 1.3125em;
+  }
+  #conectate .ajuste-descripcion p {
+    font-size: 1em !important;
+    line-height: 1em;
+  }
+  .logos-conectate-s {
+    width: 9em;
+  }
+  .logos-conectate-m {
+    width: 10em;
+  }
+  .logos-conectate-l {
+    width: 15em;
+  }
+  #img-inspiracion {
+    display: none;
+  }
+  #inspiracion h3 {
+    font-size: 1.125em;
+  }
+  #mentoria .nav-item a {
+    font-size: 0.6em;
+    line-height: 1.3em;
+  }
+  #mentoria .ingreso {
+    font-size: 0.85em;
+  }
+  #mentoria p {
+    font-size: 1em !important;
+    line-height: 1.3125em;
+    padding-top: 0.5em;
+  }
 }
-/* Small devices */
-@media screen and (min-width: 576px) and (max-width: 767.98px) {
+/* NavBar */
+@media screen and (max-width: 991.98px) {
+  .header .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5em;
+    flex-direction: column;
+    background-color: #1a519e;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+  .header .nav-menu.active {
+    left: 0;
+  }
+  .header .nav-link {
+    padding-top: 0.5em;
+  }
+
+  .header .nav-item {
+    margin: 1em 0;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
   .menu-querie {
     display: none;
   }
+  .ajuste-img-movil {
+    display: none !important;
+  }
   .img-equipo-movil {
-    display: none;
+    display: inherit;
   }
 }
-/* X-Small devices */
-@media screen and (max-width: 575.98px) {
+/* Small devices */
+@media screen and (max-width: 767.98px) {
   #carousel {
     display: none;
   }
   .footer-index {
     display: none;
+  }
+  #footer .footer-top .sub-block-social {
+    flex-direction: column !important;
+  }
+  #footer .footer-bottom img {
+    margin: 2em;
+    width: 60%;
+  }
+  #footer .ajuste-bottom-footer {
+    padding-left: 9em;
   }
   #botones {
     display: none !important;
@@ -528,20 +786,31 @@ table.table-bordered > tbody > tr > td {
   .body-programa {
     background-color: #1a519e;
   }
-
-  nav .container-fluid {
+  .menu-querie .container-fluid {
     max-height: 5em;
   }
   .logo {
     width: 45%;
     min-width: 128px;
   }
-
   .menu-home {
     display: none !important;
   }
   .menu-querie {
+    display: inherit;
     margin-top: 50%;
+  }
+  .menu-querie .nav-item {
+    text-decoration: none;
+    font-size: 0.875em;
+    font-weight: bold;
+    color: #1a519e;
+    background-color: #fff;
+    width: 124px;
+    height: 41px;
+    align-items: center;
+    margin: 1em 0;
+    text-align: center;
   }
   .menu-querie .navbar-nav a {
     font-size: 0.875em;
@@ -559,19 +828,29 @@ table.table-bordered > tbody > tr > td {
   .seccion-tipo4 {
     padding: 4em 2em 2em 2em;
   }
+  .seccion-tipo3 p,
+  li {
+    font-size: 0.75em;
+    line-height: 1.25em;
+  }
+  .seccion-tipo4 p {
+    font-size: 0.75em;
+    line-height: 1.25em;
+    margin-bottom: 0;
+  }
   .ajuste-descripcion {
     padding-right: 0;
     margin-bottom: 3em;
   }
   .titulos {
-    font-size: 4em;
+    font-size: 2.9375em;
   }
   .desc-portada-strong {
-    font-size: 1.2em;
+    font-size: 1em;
     margin: 2em 0 1em 0;
   }
   .desc-portada {
-    font-size: 1em;
+    font-size: 0.75em;
     margin-top: 1em;
   }
   .imgs-portadas {
@@ -579,7 +858,7 @@ table.table-bordered > tbody > tr > td {
     margin-top: 0;
   }
   .componentes p {
-    font-size: 1em;
+    font-size: 0.75em;
     line-height: 1.25em;
     margin-bottom: 1em;
   }
@@ -605,6 +884,7 @@ table.table-bordered > tbody > tr > td {
     display: none !important;
   }
   .img-equipo-movil {
+    display: inherit;
     background-color: #dfedfd;
   }
   #equipo {
