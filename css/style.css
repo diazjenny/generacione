@@ -387,10 +387,11 @@ table.table-bordered > tbody > tr > td {
   max-width: 23.75em;
 }
 .img-presupuesto {
-  max-width: 28.125em;
-  margin: 1.875em auto 0;
   display: block;
+  max-width: 28.125em;
+  margin: 1.25em auto 0;
 }
+
 #recursos {
   padding-top: 4em;
 }
@@ -525,6 +526,12 @@ table.table-bordered > tbody > tr > td {
   .img-equipo-movil {
     display: none;
   }
+  #botones-excelencia .botones-oscuros::before {
+    background: #1a519e;
+    right: calc(40%);
+    top: calc(50% - 0.0625em);
+    z-index: 1;
+  }
 }
 /*Large devices*/
 @media screen and (min-width: 992px) and (max-width: 1199.98px) {
@@ -533,6 +540,33 @@ table.table-bordered > tbody > tr > td {
   }
   .img-equipo-movil {
     display: none;
+  }
+  .ajuste-img-movil {
+    display: inherit;
+  }
+  #botones-excelencia .botones-oscuros::before {
+    background: #1a519e;
+    right: calc(35%);
+    top: calc(50% - 0.0625em);
+    z-index: 1;
+  }
+  #botones-excelencia .botones-oscuros a {
+    margin: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    line-height: 0.8125em;
+  }
+  #botones-equidad .botones-oscuros::before {
+    background: #1a519e;
+    right: calc(40%);
+    top: calc(50% - 0.0625em);
+    z-index: 1;
+  }
+  #botones-equidad .botones-oscuros a {
+    margin: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    line-height: 0.8125em;
   }
 }
 
@@ -550,9 +584,6 @@ table.table-bordered > tbody > tr > td {
   }
   #footer .footer-top .sub-block-social span {
     padding-bottom: 1em;
-  }
-  .img-equipo-movil {
-    display: none;
   }
   .logo {
     width: 200px;
@@ -682,9 +713,7 @@ table.table-bordered > tbody > tr > td {
     background-color: #dfedfd;
     font-weight: bold;
   }
-  #img-portada {
-    display: none;
-  }
+
   #recursos p {
     font-size: 1em !important;
     line-height: 1.3125em;
@@ -741,7 +770,6 @@ table.table-bordered > tbody > tr > td {
   .header .nav-link {
     padding-top: 0.5em;
   }
-
   .header .nav-item {
     margin: 1em 0;
   }
@@ -749,17 +777,8 @@ table.table-bordered > tbody > tr > td {
     display: block;
     cursor: pointer;
   }
-  .menu-querie {
-    display: none;
-  }
-  .ajuste-img-movil {
-    display: none !important;
-  }
-  .img-equipo-movil {
-    display: inherit;
-  }
 }
-/* Small devices */
+/* Small devices------------------------------------------------------------------------ */
 @media screen and (max-width: 767.98px) {
   #carousel {
     display: none;
