@@ -470,6 +470,9 @@ table.table-bordered > tbody > tr > td {
   padding: 0.5em 1em;
   margin: 1em 0;
 }
+.ingreso:hover {
+  color: #f5d65c;
+}
 #mentoria {
   color: #1a519e;
 }
