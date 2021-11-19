@@ -328,7 +328,7 @@ li {
   font-weight: bold;
 }
 .table-bordered {
-  max-width: 40.625em;
+  /*max-width: 40.625em;*/
   color: #1a519e;
   margin-left: auto;
   margin-right: auto;
@@ -343,6 +343,12 @@ table.table-bordered > thead > tr > th {
 table.table-bordered > tbody > tr > td {
   border: solid 0.0625em #1a519e;
   vertical-align: middle;
+}
+#requisitos .table {
+  max-width: 40.625em;
+  color: #1a519e;
+  margin-left: auto;
+  margin-right: auto;
 }
 #cierre p {
   font-size: 1.125em;
